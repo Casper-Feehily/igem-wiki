@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg" />
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+    <link rel="stylesheet" href="../../static/style.css">
+    <link rel="stylesheet" href="../../static/bootdtrap.css">
+    <link rel="stylesheet" href="../../static/animate.min.css">
+    <style>
+        /* 添加固定导航栏的样式 */
+        .navbar {
+            position: fixed;
+            /* 使导航栏固定 */
+            top: 0;
+            /* 距离顶部0 */
+            width: 100%;
+            /* 宽度100% */
+            z-index: 1000;
+
+            background-color: #343a40b3 !important;
+            /* 确保导航栏在其他内容之上 */
+        }
+
+
+
+        /* 为导航栏下方添加空隙，以避免内容被遮挡 */
+        body {
+            padding-top: 100px;
+            /*   background-color: black; */
+            /* 根据导航栏的高度设置空隙 */
+        }
+
+        .fade-in {
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .highlight {
+            font-weight: bold;
+            font-size: 1.5em;
+            /* 你可以根据需要调整字体大小 */
+        }
+
+        .hidden-content {
+            display: none;
+            /* 初始状态为隐藏 */
+            overflow: hidden;
+            /* 防止内容溢出 */
+        }
+
+        .fade-ins {
+            opacity: 0;
+            /* 初始透明度为0 */
+            animation: fadeIn 1s forwards;
+            /* 动画名称和持续时间 */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                /* 最终透明度为1 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+
+        <!---- TEAM NAME ---->
+        <a class="navbar-brand" href="#"><img src="../../image/logo.png" alt=""> BJWZ-3-China</a>
+
+        <!---- SMALL SCREEN MENU ICON ---->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto left-aligned">
+
+                <!---- HOME ---->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <!---- TEAM ---->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="team" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Team
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="team">Team</a></li>
+                        <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+                    </ul>
+                </li>
+
+                <!---- PROJECT ---->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Project
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+                        <li><a class="dropdown-item" href="description">Description</a></li>
+                        <li><a class="dropdown-item" href="engineering">Engineering</a></li>
+                        <li><a class="dropdown-item" href="experiments">Experiments</a></li>
+                        <li><a class="dropdown-item" href="notebook">Notebook</a></li>
+                        <li><a class="dropdown-item" href="results">Results</a></li>
+                    </ul>
+                </li>
+
+                <!---- SAFETY ---->
+                <li class="nav-item">
+                    <a class="nav-link" href="safety">Safety</a>
+                </li>
+
+                <!---- HUMAN PRACTICES ---->
+                <li class="nav-item">
+                    <a class="nav-link" href="human-practices">Human Practices</a>
+                </li>
+
+                <!---- AWARDS ---->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Awards
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="education">Education</a></li>
+                        <li><a class="dropdown-item" href="entrepreneurship">Entrepreneurship</a></li>
+                        <li><a class="dropdown-item" href="hardware">Hardware</a></li>
+                        <li><a class="dropdown-item" href="inclusivity">Inclusivity</a></li>
+                        <li><a class="dropdown-item" href="measurement">Measurement</a></li>
+                        <li><a class="dropdown-item" href="model">Model</a></li>
+                        <li><a class="dropdown-item" href="plant">Plant</a></li>
+                        <li><a class="dropdown-item" href="software">Software</a></li>
+                        <li><a class="dropdown-item" href="sustainable">Sustainable</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+    </nav>
+
+    <div class="container bbs">
+        <div class="bg  animate__animated animate__backInDown" style="font-family: Comic Sans MS;">
+            <img src="../../image/z5.png" alt="">
+            <!--   <p class="q1">AFB1 Real Twe crasher</p>
+            <p class="q2">BjWZ -3-China</p> -->
+
+        </div>
+    </div>
+    <div class="container box" style="background-color: #000;">
+        <div class="image-container "><img src="../../image/121726845044_.pic-topaz-enhance-4x 2.JPG" alt=""></div>
+        <div class="box2" style="font-family: Comic Sans MS;">
+            <p>In today’s era of rapid population growth, food shortages
+                are one of the most critical issues the world faces. The
+                food waste caused by various pollutants only makes the
+                situation worse</p>
+            <p>Aflatoxin is one of the most toxic, widely prevalent, and
+                economically damaging contaminants in nature each year</p>
+
+        </div>
+    </div>
+    <div class="container box3">
+        <div class="col-5  animate__animated animate__backInLeft "><img
+                src="../../image/151726845045_.pic-topaz-enhance-4x_2.JPG" alt=""></div>
+        <div class="col-7 box4" style="font-family: Comic Sans MS;">
+            <p class="fade-in">Currently, aflatoxin-induced hepatocellular carcinoma (HCC) or</p>
+            <p class="fade-in">liver cancer accounts for approximately <span class="highlight">25%</span> of the global
+            </p>
+            <p class="fade-in">burden. Reports indicate that aflatoxin contamination in</p>
+            <p class="fade-in">agricultural crops may result in an annual loss of over <span class="highlight">750
+                </span> million in Africa,</p>
+            <p class="fade-in">while in the United States, it causes an annual</p>
+            <p class="fade-in">
+                income loss exceeding <span class="highlight" id="number">0</span> million.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container box5">
+        <div class="col-7 p1" style="font-family: Comic Sans MS;">
+            <p>However, current methods for detecting and deqrading
+            </p>
+            <p>AFBl primarily rely on physical and chemical approaches,
+            </p>
+            <p> both of which have certain limitations.</p>
+        </div>
+        <div class="col-5 p2"><img src="../../image/z4.jpg" alt=""></div>
+    </div>
+    <div class="container box6">
+        <div class="hidden-content" style="font-family: Comic Sans MS;">
+            <p class="p3 fade-ins">Perhaps a solution can be found with…</p>
+            <p class="p4 fade-ins">synthetic biology...?</p>
+        </div>
+    </div>
+    <div class="container box7" style="font-family: Comic Sans MS;">
+        <div class="b1">
+            <li>Learn
+            </li>
+            <li>More</li>
+            <li>Details</li>
+        </div>
+        <div>
+            <div class="b2">
+                <li><a href="">
+                        <p>parts</p>
+                        <p><img src="../../image/漏斗.png" alt=""></p>
+                    </a></li>
+                <li><a href="">
+                        <p>Notebook</p>
+                        <p><img src="../../image/物品-记事本.png" alt=""></p>
+                    </a></li>
+                <li><a href="">
+                        <p>procitios</p>
+                        <p><img src="../../image/我的__1_.png" alt=""></p>
+                    </a>
+                </li>
+                <li><a href="">
+                        <p>Descrintion</p>
+                        <p><img src="../../image/灯泡.png" alt=""></p>
+                    </a></li>
+                <li><a href="">
+                        <p> Rusults</p>
+                        <p><img src="../../image/实验_化学.png" alt=""></p>
+                    </a></li>
+                <li><a href="">
+                        <p>Safety</p>
+                        <p><img src="../../image/安全_填充.png" alt=""></p>
+                    </a>
+                </li>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container box8" style="font-family: Comic Sans MS;">
+        <video width="" height="" controls>
+            <source src="../../image/4248.mp4" type="video/mp4">
+
+
+        </video>
+    </div>
+    <div class="container box9">
+        <div class=" col-6 b7
+        " style="font-family: Comic Sans MS;">
+            <div class="b5">BJW2 -
+                3 -
+                China</div>
+            <div><img src="../../image/7509fcca-203c-4351-bd9b-ae0cff64a959.jpg" alt=""></div>
+        </div>
+        <div class="col-6 mm ">
+            <div class="b4" style="font-family: Comic Sans MS;">
+                <li><a href="">Team</a></li>
+                <li><a href="">project</a></li>
+                <li><a href="">Safety</a></li>
+                <li><a href="">Human</a></li>
+                <li><a href="">Aractices</a></li>
+            </div>
+
+            <div class="b4 b6" style="font-family: Comic Sans MS;">
+                <li><a href="">
+                        <p>Follow</p>
+                        <p class="p5"><img src="../../image/bilibili.png" alt=""></p>
+                    </a></li>
+                <li><a href="">
+                        <p>and</p>
+                        <p class="p5"><img src="../../image/选中_油管.png" alt=""></p>
+                    </a></li>
+                <li><a href="">
+                        <p>Contect</p>
+                        <p class="p5"><img src="../../image/脸书.png" alt=""></p>
+                    </a></li>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container box10" style="font-family: Comic Sans MS;">
+        <div class="b8">BJW2 -
+            3 -
+            China</div>
+    </div> -->
+    <!-- <div class="container box11" style="font-family: Comic Sans MS;">
+        <div class="b9">
+            <li onclick="toggleVisibility(this)">
+                <p><img src="../image/ZonghuanLi.png" alt=""></p>
+                <p>Zonghuan Li</p>
+                <p class="p6">My name is Zonghuan Li, and I come from Beijing No. 5 High School. I am delighted to have
+                    the opportunity to participate in the iGEM competition because I have a great passion for biology
+                    and I am eager to use my knowledge to solve world problems. Here, I have met many like-minded young
+                    people, which has given me the chance to unleash my imagination fully and create projects that
+                    belong to us. “To establish harmony with heaven and earth, to shape destiny for the people, to
+                    continue the pursuit of excellence, and to open up peace for all eternity.” </p>
+            </li>
+            <li onclick="toggleVisibility(this)">
+                <p><img src="../image/Lanmeng Zhang.png" alt=""></p>
+                <p>Lanmeng Zhang</p>
+                <p class="p6">Greetings to everyone! My name is Lanmeng Zhang, a student from Beijing No. 5 High School.
+                    I'm thrilled to be going to Paris with such an amazing group of innovators and enthusiasts.
+                    Regardless of where you come from, we will embark on an exciting journey together to explore
+                    cutting-edge Synthetic Biology.
+
+                    This event celebrates the spirit of creativity, collaboration, and exploration embodied by iGEM. We
+                    will delve into groundbreaking projects, share insights, and connect with fellow enthusiasts who are
+                    passionate about pushing boundaries.
+
+                    I look forward to the inspiring presentations and engaging discussions that lie ahead. Let's dive
+                    in, support each other, and make the most of this opportunity to learn and grow together. Let's make
+                    this event </p>
+            </li>
+            <li onclick="toggleVisibility(this)">
+                <p><img src="../image/Peixin Li.png" alt=""></p>
+                <p>Peixin Li</p>
+                <p class="p6">My name is Peixin Li, a high school student with a keen interest in molecular biology and
+                    genetics. It is an honor to be a member of BJWZ-3, and even more so to participate in the iGEM
+                    competition. I hope to contribute meaningfully to the field of biology.</p>
+            </li>
+            <li onclick="toggleVisibility(this)">
+                <p><img src="../image/Xinyu Zhang.png" alt=""></p>
+                <p>Xinyu Zhang</p>
+                <p class="p6">Hi! My name is Xinyu Zhang. I am a student from Beijing No. 5 High School, and I feel
+                    honored to be participating in the 2024 IGEM competition. Ever since childhood, I have had a passion
+                    for biology, observing plants and insects around me through a microscope. When it comes to work and
+                    study, I am always filled with enthusiasm and motivation. Despite facing numerous challenges and
+                    pressures, I persist until the end. I sincerely hope that through this competition, I can not only
+                    improve myself but also contribute positively to the advancement of synthetic biology.</p>
+            </li>
+            <li onclick="toggleVisibility(this)">
+                <p><img src="../image/Yiyang Sun.png" alt=""></p>
+                <p>Yiyang Sun</p>
+                <p class="p6">Hello! I am Yiyang Sun, a senior high school student from Beijing No. 5 High School. I am
+                    responsible for the experiments in our subject. I really enjoy learning biology and what I love most
+                    is molecular biology and bioengineering. In the future, I will continue studying biology and find a
+                    career that can enable me to contribute to society by using my biological knowledge.
+                    Lastly, I hope I can keep my original intention and always remain curious when studying biology,
+                    just like a saying in a game called Honkai Impact 3rd: "May the impeccable person love and bless
+                    them, and grant the return of their true self."</p>
+            </li>
+
+        </div>
+    </div> -->
+    <footer class="pt-5 pb-5 footer py-5  text-white" style="background-color: #000;">
+        <div class="container n1">
+
+
+            <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+            <div class="row mt-4">
+                <div class="col">
+                    <p class="mb-0"><small>© 2024 - Content on this site is licensed under a <a class="subfoot"
+                                href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons
+                                Attribution 4.0 International license</a>.</small></p>
+                    <p><small>The repository used to create this website is available at <a
+                                href="https://gitlab.igem.org/2024/bjwz-3-china">gitlab.igem.org/2024/bjwz-3-china</a>.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="../../static/bst.js"></script>
+    <script>
+        // 定义一个变量来跟踪是否已经显示内容
+        let contentShown = false;
+
+        // 监听滚动事件
+        window.addEventListener('scroll', function () {
+            const content = document.querySelector('.hidden-content');
+
+            // 检查滚动位置，比如当用户滚动到页面的 300 像素位置时，显示内容
+            if (window.scrollY > 2000 && !contentShown) {
+                content.style.display = 'block'; // 显示内容
+
+                // 使用 setTimeout 来应用 fade-in 动画
+                setTimeout(() => {
+                    content.classList.add('fade-ins'); // 添加 fade-in 类
+                }, 10); // 延迟添加类，以确保效果生效
+
+                contentShown = true; // 标记内容为已显示
+            }
+        });
+        function animateNumber(element, start, end, duration) {
+            let startTimestamp = null;
+
+            function step(timestamp) {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = timestamp - startTimestamp;
+                const value = Math.min(Math.floor((progress / duration) * (end - start) + start), end);
+                element.textContent = value;
+
+                if (progress < duration) {
+                    requestAnimationFrame(step);
+                }
+            }
+
+            requestAnimationFrame(step);
+        }
+
+        const numberElement = document.getElementById('number');
+        animateNumber(numberElement, 0, 100, 3000); // 2秒钟内从0增加到100
+        function toggleVisibility(li) {
+            var p6 = li.querySelector('.p6');
+            if (p6.classList.contains('show')) {
+                p6.classList.remove('show'); // 点击时消失
+            } else {
+                p6.classList.add('show'); // 点击时显示
+            }
+        }
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+            }
+        );
+        wow.init();
+        /*         window.addEventListener('scroll', function () {
+                    const box = document.querySelector('.box6');
+                    const scrollY = window.scrollY;
+                    const threshold = box.offsetTop + box.offsetHeight; // 图卡底部位置
+        
+                    if (scrollY > box.offsetTop) {
+                        if (scrollY < threshold) { // 文本未完全移除
+                            box.style.backgroundPositionY = `${-(scrollY - box.offsetTop) * 0.5}px`; // 背景图缓慢移动
+                        } else {
+                            box.style.backgroundPositionY = '0'; // 向上滚动后，图像位置恢复
+                        }
+                    }
+                });
+         */
+    </script>
+    <script src="../../static/WOW.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+  
+{% block title %}Project Description{% endblock %}
+
+{% block page_content %}
+
+
+<div class="bloc tc-4758 bgc-1155" id="bloc-26">
+    <div class="container bloc-lg">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <h1 class="mg-md text-center tc-5648">Background and Inspiration</h1>
+                <p class="mg-md text-justify">&nbsp; &nbsp; &nbsp;Aflatoxins (AFTs, 312 ~ 346 kD) are a class of
+                    colorless and odorless secondary metabolites produced by a variety of fungi such as
+                    Aspergillus flavus. They are highly toxic and can induce carcinogenic, toxic and
+                    malformation effects. In addition, due to the wide distribution of the toxin, aflatoxins
+                    will inevitably be directly or indirectly touched by humans during contact and ingestion
+                    with contaminated agricultural products and animal products derived from the use of
+                    contaminated feed, resulting in toxicity. In 1993, aflatoxins were listed as Grade I strong
+                    carcinogens by the World Health Organization Cancer Institute, and there are more than 20
+                    aflatoxins that have been found and determined in structure, of which aflatoxins B1(AFB1) is
+                    the most carcinogenic. Studies have found that long-term low-dose intake of AFB1 by humans
+                    can lead to embryo deformities, mutations, and primary cancers, resulting in immune
+                    suppression and gene mutation of organisms, while one-time large intake can cause acute
+                    poisoning or even death, and AFB1 can also remain in animal products to further endanger
+                    human health. In addition, aflatoxins have a high detection rate in cereals, dairy products,
+                    fats, spices and fruits, so aflatoxins have caused serious negative effects on people's
+                    normal social production and life.<br></p>
+            </div>
+        </div>
+    </div>
+</div><!-- bloc-26 END --><!-- bloc-27 -->
+<div class="bloc tc-4758 bgc-1155" id="bloc-27">
+    <div class="container bloc-lg">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <h1 class="mg-md text-center tc-5648">Product Design<br></h1>
+                <p class="mg-md text-justify ">&nbsp; &nbsp; To address this, the BJWZ-3-China team is using
+                    synthetic biology methods to modify genetically engineered probiotics, aiming to develop a
+                    probiotic additive that can degrade aflatoxins in dairy products, in order to reduce the
+                    losses caused by aflatoxin contamination from various perspectives.<br>&nbsp; &nbsp; &nbsp;
+                    We have chosen a probiotic commonly used in dairy fermentation - Lactobacillus rhamnosus as
+                    our chassis. As a Gram-positive bacterium, its peptidoglycan layer can physically adsorb up
+                    to 80% of aflatoxins in the environment, serving an enrichment function.<br>&nbsp; &nbsp;
+                    &nbsp; However, this binding is not stable, and after a period of time, aflatoxins can
+                    revert to their free state. Therefore, we have introduced the gene for aflatoxin detoxifying
+                    enzyme into this strain, giving it the ability to completely degrade aflatoxins. Aflatoxin
+                    detoxifying enzyme (ADTZ) is a luminescent enzyme found in porous fungi in the Pleurotaceae
+                    family, possessing the efficient capability to detoxify aflatoxins by disrupting the C8, 9
+                    double bond in the furofuran ring to render them non-toxic.<br><br></p>
+            </div>
+        </div>
+    </div>
+</div><!-- bloc-27 END --><!-- bloc-14 -->
+<div class="bloc tc-4758 bgc-1155" id="bloc-14">
+    <div class="container bloc-lg">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <h1 class="mg-md text-center tc-5648">Finely-tuned Control Device<br></h1>
+                <p class="mg-md text-justify">&nbsp; &nbsp; &nbsp; We have also engineered a finely-tuned
+                    control device so that the engineered bacteria only secrete the aflatoxin detoxifying enzyme
+                    when aflatoxins are detected in the environment. Indiscriminate secretion of the enzyme
+                    could burden the engineered strain excessively, disrupt the normal surrounding
+                    microenvironment, and even impact human intestinal health. We have utilized nanobodies as
+                    tools.<br>&nbsp; &nbsp; &nbsp;Nanobodies, naturally lacking light chains found in the
+                    peripheral blood of alpacas, consist of only one variable heavy chain (VHH) and two
+                    conventional CH2 and CH3 regions, unlike single-chain antibody fragments (scFv) that are
+                    prone to mutual adhesion and aggregation brought about by artificial modifications.The
+                    cloned VHH structure expressed individually exhibits comparable structural stability to the
+                    original heavy chain antibody as well as binding activity to the antigen, making it the
+                    smallest unit known to bind the target antigen. We will use a nanoantibody, Nb26, which can
+                    specifically recognize and bind aflatoxin. <br>&nbsp; This nanoantibody will be combined
+                    with a nano-luciferase enzyme (Addgene_87696) and delivered separately into the product.
+                    Upon binding to aflatoxin, the nano-luciferase enzyme will be activated, producing
+                    fluorescence at a specific wavelength. Additionally, we are expressing a photosensitive
+                    channel protein on the cell membrane of engineered bacteria that will change conformation
+                    upon receiving the specific wavelength of fluorescence, opening the channel to allow entry
+                    of signal molecules present in the environment. Subsequently, through relevant promoters,
+                    the detoxifying enzyme for aflatoxin will be initiated for expression.<br><br></p>
+            </div>
+        </div>
+    </div>
+</div><!-- bloc-14 END --><!-- bloc-29 -->
+<div class="bloc tc-4758 bgc-1155" id="bloc-29">
+    <div class="container bloc-lg">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <h1 class="mg-md text-center tc-5648">Suicide Switch<br></h1>
+                <p class="mg-md text-justify" id="c">&nbsp; &nbsp; Furthermore, to prevent potential
+                    contamination from the engineered strain escaping into the environment, a glucose-controlled
+                    system has been implemented as a suicide switch. Considering the differences in glucose
+                    concentrations in the human intestinal tract and dairy environments compared to the external
+                    environment, the PT-acrp promoter responsive to changes in glucose concentration has been
+                    chosen. To ensure no bacterial contents escape upon cell death and to mitigate any risks,
+                    the mazF gene is being utilized. This gene encodes an endoribonuclease that cleaves RNA at
+                    ACA sites, leading to microbial death, thus facilitating cell suicide without bacterial cell
+                    lysis. The PT-acr promoter controls the expression of the suicide gene mazF, which activates
+                    under low glucose concentrations to achieve the desired suicidal effect.<br></p>
+            </div>
+        </div>
+    </div>
+</div><!-- bloc-29 END --><!-- bloc-30 -->
+<div class="bloc tc-4758 bgc-1155" id="bloc-30">
+    <div class="container bloc-lg">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <h1 class="mg-md text-center tc-5648">Innovation and Application<br></h1>
+                <p class="mg-md text-justify" id="c">&nbsp; &nbsp; The innovation of this project lies in the
+                    first-time combination of physical adsorption with degradation of aflatoxin, along with the
+                    design of a unique fine-tuning device. This product can be used for the degradation of
+                    aflatoxin in dairy products. Additionally, Lactobacillus rhamnosus itself is a common
+                    probiotic, so after human intake of related products, it can temporarily colonize the human
+                    intestine, degrade small amounts of aflatoxin ingested by humans, and protect humans from
+                    aflatoxin harm in a short period of time.<br></p>
+            </div>
+        </div>
+    </div>
+</div><!-- bloc-30 END -->
+
+{% endblock %}

@@ -1,0 +1,189 @@
+.navbar-brand img {
+  width: 60px;
+}
+/* .container {
+  width: 100%;
+  border: 1px solid red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: url(../image/主页大字背景.pic.jpg);
+} */
+.bg {
+  margin-top: 20%;
+}
+
+.container .w-25 {
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 100% !important;
+    height: 444px;
+    /* padding-top: 40px; */
+  }
+  .box .image-container {
+    /* margin-top: 10px !important; */
+  }
+  .box img {
+    height: 444px !important;
+  }
+  .w-25 img {
+    width: 70%;
+    margin-top: 10%;
+  }
+}
+nav {
+}
+.w-25:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+.box {
+  position: relative;
+  background-image: none;
+}
+.box {
+  width: 100%;
+  margin-top: 0px !important;
+}
+.container .box img {
+  width: 100%;
+}
+.image-container {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease;
+  /* 添加过渡效果 */
+  filter: blur(5px);
+  /* 默认虚化 */
+}
+
+.image-container:hover img {
+  filter: blur(0);
+  /* 鼠标悬停时去除虚化 */
+}
+.box2 {
+  position: absolute;
+  top: 10px;
+  width: 50%;
+
+  margin: auto;
+  left: 25%;
+  font-size: 35px;
+  color: white;
+}
+.box2 p {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* 文本阴影 */
+}
+body {
+  background-color: black;
+}
+.box3 {
+  background-color: rgb(199, 161, 148) !important;
+
+  /*   margin-top: 25.5%; */
+}
+
+.box4 {
+  font-size: 25px;
+}
+.box4 p {
+  height: 18px;
+}
+.fade-in {
+  opacity: 0; /* 初始状态为透明 */
+  animation: fadeIn 1.5s forwards; /* 动画效果 */
+  animation-delay: 0.5s; /* 动画延迟 */
+}
+
+.highlight {
+  color: red; /* 更换颜色，可以根据需要更改 */
+  font-weight: bold; /* 加粗 */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* 可添加淡出效果的类 */
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+.box5 {
+  display: flex;
+  background-image: none;
+  background-color: #000;
+  color: white;
+}
+.p1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  padding-left: 10% !important;
+  margin: auto;
+}
+.p2 img {
+  padding-top: 20px;
+}
+.box6 {
+  display: flex;
+  background-image: none;
+  background-color: white;
+}
+.box6 {
+  position: relative; /* 设置位置为相对 */
+  text-align: center;
+  background-size: cover; /* 使图像覆盖整个背景 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../image/662be02cdaea01e3054020935c44fb61.JPG);
+  height: 100vh; /* 使容器高度为视口高度 */
+}
+.b2 {
+  display: flex;
+}
+.box7 {
+  display: flex;
+  padding-top: 50px;
+  color: white;
+  background-image: none;
+  background-color: #000;
+  list-style: none;
+}
+.box8 {
+  padding: 0 !important;
+  background-image: none;
+  background-color: #000;
+}
+.box9 {
+  background-image: none;
+  background-color: white;
+}
+
+.box8 video {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
